@@ -149,12 +149,11 @@ class JSHarvester:
     def _make_client(self) -> httpx.AsyncClient:
         """Create a single reusable AsyncClient. Call once per run()."""
         return httpx.AsyncClient(**self._client_opts)
-            
+
     @property
     def client_opts(self) -> dict:
-    """Public read-only access to HTTP client options."""
-    return self._client_opts.copy()
-
+        """Public read-only access to HTTP client options."""
+        return self._client_opts.copy()
     async def discover_js_files(self) -> List[str]:
         """Discover JS file URLs from the target page."""
         js_urls: set = set()
