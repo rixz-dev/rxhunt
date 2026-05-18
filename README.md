@@ -94,6 +94,7 @@ Seluruh operasi berjalan secara **asynchronous** menggunakan `asyncio` — JS fi
 
 ```bash
 # Clone atau ekstrak rxhunt ke direktori kerja
+git clone https://github.com/rixz-dev/rxhunt.git
 cd rxhunt/
 
 # Jalankan install script
